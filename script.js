@@ -167,11 +167,11 @@ function toggleVisible() {
   previous.classList.toggle("previous-hidden");
 }
 
-$(document).ready(function () {
-  $(".carousel").carousel({
-    indicators: true,
-  });
-});
+// $(document).ready(function () {
+//   $(".carousel").carousel({
+//     indicators: true,
+//   });
+// });
 
 $(document).ready(function () {
   $(".modal").modal();
