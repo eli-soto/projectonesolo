@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+    < ! ----  rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet" -->
+    />
+  </head>
+  <body>
+    <nav class="grey darken-2">
+      <a href="#" class="brand-logo head"
+        >FoodFlix <i class="tiny material-icons">local_movies</i></a
+      >
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a onclick="toggleVisible()">History</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"
+        ><img src="./images/recipe.avif"
+      /></a>
+      <a class="carousel-item" href="#two!"><img src="./images/cook.jpg" /></a>
+      <a class="carousel-item" href="#three!"
+        ><img src="./images/movie.jpg"
+      /></a>
+    </div>    
+    <section class="mainContainer">
+      <div class="moviesContainer">
+        <h3>Movies</h3>
+        <div id="movie-select" class="input-field col s12">
+          <select id="movie-drp-dwn">
+            <option value="none" disabled selected>Pick your Movie genre!</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Nature">Nature</option>
+            <option value="Sci-fi">Sci-fi</option>
+          </select>
+        </div>
+      </div>
+      <div id="rec-container" class="recipeContainer">
+        <h3>Recipes</h3>
+        <div class="input-field col s12">
+          <div id="recipe-select" class="input-field col s12">
+            <select id="recipe-drp-dwn">
+              <option value="none" disabled selected>
+                Pick your culture of food!
+              </option>
+              <option value="Italian">Italian</option>
+              <option value="Greek">Greek</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Indian">Indian</option>
+              <option value="Chinese">Chinese</option>
+              <option value="American">American</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="btn-container">
+      <button onclick=generate() id="gen-btn">Generate</button>
+    </div>
+    <section id="results">
+      <h1 id="pre-header">Click Generate!</h1>
+      <div class="results-cards">
+        <img id="movie-image" class="result-image" src="#" alt="movie-image">
+        <div class="result-info">
+          <div id="title" class="result-tag light text"></div>
+          <div id="year" class="result-tag dark text"></div>
+          <div id="rating" class="result-tag light text"></div>
+          <a id="movie-trailer" class="link-btn text dark" href="">Check it out!</a>
+        </div>
+      </div>
+      <div class="results-cards">
+        <img id="restaurant-image" class="result-image" src="#" alt="restaurant-image">
+        <div class="result-info">
+          <div id="label" class="result-tag light text"></div>
+          <div id="calories" class="result-tag dark text"></div>
+          <div id="time" class="result-tag light text"></div>
+          <a id="recipe-link" class="link-btn text dark" href="">Check it out!</a>
+        </div>
+      </div>
+    </section>
+    <div id="previous" class="previous-hidden">
+      <a href="#" class="pre" id="pre-movie"></a>
+      <a href="#" class="pre" id="pre-recipe"></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
