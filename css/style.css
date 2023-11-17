@@ -1,24 +1,21 @@
 
 body {
-  background: darkgray;
+  background: rgb(93, 55, 55);
 }
 .head {
-  font-family: "anton";
+  font-family: "new times roman";
 }
 .collection {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.carousel {
-  background: lightgray;
-  border: thick double darkgreen;
-}
+
 .description {
   text-align: center;
   margin: 50px;
-  background: lightgray;
-  border: 4mm ridge green;
+  background: rgb(211, 211, 211);
+  border: 4mm ridge rgb(115, 97, 102);
 }
 .information {
   margin-bottom: 10px;
@@ -137,7 +134,7 @@ h3 {
 }
 
 .pre-header {
-  color: black;
+  color: rgb(132, 15, 15);
   font-size: 30px;
   left: 300px;
   z-index: 1;
